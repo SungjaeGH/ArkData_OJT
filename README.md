@@ -37,3 +37,23 @@
 - 가끔 하나의 숫자가 중복으로 잘못 입력되어 있는 경우가 있다. 
 - 프로그램의 전체 변수 크기는 200byte를 넘지 않는다.
 
+***
+
+## 3. Simple Chatting
+### ✔ 과제
+- IPC 통신을 이용한 Simple 채팅 기능을 구현한다.
+- Server, Control, Client 프로세스로 구성되어 있다.
+    - Server : client 접속/해제 모니터링
+    - Control : Server 시작/종료, client 접속/해제
+    - Client : 메시지 내용 확인
+
+### ✔ 조건
+- 메시지 내용은 최대 255byte까지 입력할 수 있다.
+- client는 최대 2명까지 들어올 수 있다.
+- server가 기동되지 않으면 client들이 접속할 수 없다.
+
+### ✔ 프로그램 명령어 설명
+- Server 시작 : control.c start server
+- Server 종료 : control.c stop server
+- Client 시작 : control.c start client (client 이름)
+- Client 종료 : control.c stop client (client 이름)
